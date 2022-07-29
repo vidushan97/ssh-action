@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM appleboy/drone-ssh:latest
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
