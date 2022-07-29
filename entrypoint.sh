@@ -4,4 +4,4 @@ set -eu
 
 export GITHUB="true"
 
-echo env
+env
