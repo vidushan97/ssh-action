@@ -13,5 +13,5 @@ echo "$INPUT_KEY" | tr -d '\r' | ssh-add - > /dev/null
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
 apk add --update --no-cache sshpass openssh-client jq net-tools curl gettext
-ssh $INPUT_USERNAME@$INPUT_HOST touch abc.text
+ssh -o StrictHostKeyChecking=no $INPUT_USERNAME@$INPUT_HOST touch abc.text
 echo "end"
