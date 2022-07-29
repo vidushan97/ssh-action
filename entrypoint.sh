@@ -6,5 +6,6 @@ export GITHUB="true"
 
 echo $INPUT_USERNAME
 echo $INPUT_HOST
-ssh -i $INPUT_KEY $INPUT_USERNAME@$INPUT_HOST && touch abc.text
+echo $INPUT_KEY >> key.pem
+ssh -i key.pem $INPUT_USERNAME@$INPUT_HOST && touch abc.text
 echo "end"
