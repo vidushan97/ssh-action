@@ -4,4 +4,5 @@ set -eu
 
 export GITHUB="true"
 
-env
+echo $INPUT_USERNAME
+echo $INPUT_HOST
